@@ -1,0 +1,16 @@
+1. Result Analysis
+    1) Time:
+	The basic version of the dynamic programming algorithm is a two-dimensional OPT(i,j). Therefore, its time complexity is O(nm) (where n and m respectively represent the length of two strings).
+	The algorithm that adds the divide and conquer step still maintains the time complexity of O(nm). However, because we will split and merge each time, it will add a constant k to the time complexity of the entire algorithm, which also makes this algorithm almost twice the time of the basic version when the scales of n and m becomes larger.
+	This gap can be clearly seen in CPUPlot.png. I used nm*10^5 as the x-coordinate to show the gap between the two algorithms when the data size increases rapidly. It can be clearly seen that when nm is less than 1*10^5, the time difference between the two algorithms is not large. However, as nm increases to close to 1*10^6, the basic version of the algorithm (red line) is obviously lower than the space-efficient algorithm (green line). Of course, we can also see that as the data size increases, the gap between the two curves remains at a constant level instead of reaching an exponential level. This shows that the polynomial time complexity of the two algorithms is the same.
+
+    2) Space:
+	In the basic version of the dynamic programming algorithm, we need to store all the elements, so the space complexity is also O(nm). 
+	The space-efficient algorithm can reuse the space of a row without opening up a new space through recursion, so the space complexity is O(m+n). This conclusion can be drawn in MemoryPlot.png. I still use nm*10^5 as the x coordinate. It can be seen that when the data size reaches 8*10^5, the basic algorithm uses about 40,000KB of space, while the space-efficient algorithm only uses 4,000KB. When the data size reaches 2*10^6, the basic algorithm uses about 90,000KB of space, and the space-efficient algorithm only uses 7500KB. The growth trend of these two curves shows an exponential gap, which proves the gap in theoretical complexity.
+	
+2. Insights and Conclusion
+	The conclusion I can draw from this project is that state compression is an important part of algorithm applications. I think divide and conquer is just a way of state compression. The idea it represents is to discard data that will not be reused in the application to reduce space costs. 
+	In most previous algorithm learning or algorithm competitions, I was told that time complexity is the most important indicator of an algorithm. Therefore, most of the time I am used to sacrificing space in exchange for time. However, in this project I understand that in many real-world applications, we may also sacrifice time in exchange for space, depending on reality.
+
+3. Division of Labor
+	I am the only member of the group because I want to challenge myself to complete this project independently and fortunately I think I did it. This means that all the work is done by me.
