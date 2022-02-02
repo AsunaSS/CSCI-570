@@ -2,6 +2,6 @@
 
 ## [Personal Note](/Other%20Files/CSCI-570%20Note(unfinished).pdf)
 ## Lecture Note 1~14
-## Ebook
+## [Ebook](/Algorithm%20Design%20-%20Jon%20Kleinberg.pdf)
 ## Practice Exam 1~3
 ## Homework
