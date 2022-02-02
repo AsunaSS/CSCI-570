@@ -1,5 +1,4 @@
-# CSCI-570 Analysis of Agorithms - Fall 2021 
-## Grade: A
+# CSCI-570 Analysis of Agorithms - Fall 2021 (Grade: A)
 
 ## [Personal Note](/Other%20Files/CSCI-570%20Note(unfinished).pdf)
 ## Lecture Note 1~14
